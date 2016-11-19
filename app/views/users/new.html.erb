@@ -1,0 +1,12 @@
+<%= notice if notice %>
+
+<% if current_user %>
+
+	<h1>Welcome <%= current_user.name %>!</h1>
+	Click here to <%= link_to "sign out", signout_path %>
+
+<% else %>
+
+	<%= link_to "Sign in with Github", "/auth/github" %>
+
+<% end %>
