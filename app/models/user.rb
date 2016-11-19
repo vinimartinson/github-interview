@@ -4,6 +4,7 @@ class User < ApplicationRecord
       user.provider = auth["provider"]
       user.uid = auth["uid"]
       user.name = auth["info"]["name"]
+      puts "=========================== #{user.name}"
     end
   end
 end
