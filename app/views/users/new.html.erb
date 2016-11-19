@@ -2,6 +2,7 @@
 
 <% if current_user %>
 
+	<%= current_user %>
 	<h1>Welcome <%= current_user.name %>!</h1>
 	Click here to <%= link_to "sign out", signout_path %>
 
